@@ -19,7 +19,7 @@ export default function OurJourneySection() {
           <div className="w-full md:w-1/2 mt-6 md:mt-0 md:-ml-24 bg-black text-white p-6 md:p-10 rounded-xl shadow-lg z-10">
             <p className="text-lg leading-relaxed">
               Our journey began with a shared love for movies and the thrill of storytelling through games.
-              From a small group of film and trivia enthusiasts, we've grown into a passionate team committed
+              From a small group of film and trivia enthusiasts, we&#39;ve grown into a passionate team committed
               to blending cinema with gameplay. Together, we strive to create engaging, memory-stirring experiences
               and build a vibrant community of movie lovers and gamers alike.
             </p>

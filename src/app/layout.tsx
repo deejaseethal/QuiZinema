@@ -1,6 +1,8 @@
 "use client";
 
 import './globals.css';
+import Link from 'next/link';
+import Image from 'next/image';
 import FooterSection from './components/footer'
 import { useState } from 'react';
 
@@ -16,9 +18,17 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         {/* Left Side: Logo and Navigation Links */}
         <div className="flex items-center">
-          <a href="/" className="flex items-center mr-6">
-            <img src="/CineQuest.webp" alt="Quizinema Logo" className="h-10" />
-          </a>
+          <Link href="/" className="flex items-center mr-6">
+            <div className="relative w-[100px] h-[40px]">
+              <Image
+                src="/CineQuest.webp"
+                alt="Quizinema Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+
+          </Link>
 
           {/* Hamburger Menu for Mobile */}
           <button
@@ -43,38 +53,37 @@ function Navbar() {
 
           {/* Navigation Links */}
           <div
-            className={`${
-              isOpen ? 'block' : 'hidden'
-            } sm:flex sm:items-center sm:space-x-4 w-full sm:w-auto absolute sm:static top-16 left-0 sm:left-auto bg-white sm:bg-transparent p-4 sm:p-0 shadow-md sm:shadow-none`}
+            className={`${isOpen ? 'block' : 'hidden'
+              } sm:flex sm:items-center sm:space-x-4 w-full sm:w-auto absolute sm:static top-16 left-0 sm:left-auto bg-white sm:bg-transparent p-4 sm:p-0 shadow-md sm:shadow-none`}
           >
-            <a href="/" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Home
-            </a>
-            <a href="/services" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            </Link>
+            <Link href="/services" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Services
-            </a>
-            <a href="/pricing" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            </Link>
+            <Link href="/pricing" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Pricing
-            </a>
-            <a href="/news" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            </Link>
+            <Link href="/news" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               News
-            </a>
-            <a href="/success-stories" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            </Link>
+            <Link href="/success-stories" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Success Stories
-            </a>
-            <a href="/about" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            </Link>
+            <Link href="/about" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               About Us
-            </a>
-            <a href="/jobs" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            </Link>
+            <Link href="/jobs" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Jobs
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* Right Side: Search, Phone, Sign In, Contact Us */}
         <div className="flex items-center space-x-4">
           {/* Search Icon */}
-          <a href="/search" className="text-gray-600 hover:text-gray-800">
+          <Link href="/search" className="text-gray-600 hover:text-gray-800">
             <svg
               className="w-5 h-5 inline-block"
               fill="none"
@@ -89,28 +98,28 @@ function Navbar() {
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
-          </a>
+          </Link>
 
           {/* Phone Number */}
-          <a
+          <Link
             href="tel:+15555555556"
             className="text-gray-600 hover:text-gray-800 hidden sm:block"
           >
             +1 555-555-5556
-          </a>
+          </Link>
 
           {/* Sign In */}
-          <a href="/signin" className="text-gray-600 hover:text-gray-800 hidden sm:block">
+          <Link href="/signin" className="text-gray-600 hover:text-gray-800 hidden sm:block">
             Sign In
-          </a>
+          </Link>
 
           {/* Contact Us Button */}
-          <a
+          <Link
             href="/contact"
             className="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
@@ -127,7 +136,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">{children}</main>
-        <FooterSection/>
+        <FooterSection />
       </body>
     </html>
   );
