@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md p-3">
+    <nav className="bg-white shadow-md p-3 relative z-50">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left Side: Logo and Navigation Links */}
         <div className="flex items-center">
@@ -59,22 +59,22 @@ function Navbar() {
             <Link href="/" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Home
             </Link>
-            <Link href="/services" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/services"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Services
             </Link>
-            <Link href="/pricing" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/pricing"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Pricing
             </Link>
-            <Link href="/news" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/news"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               News
             </Link>
-            <Link href="/success-stories" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/success-stories"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Success Stories
             </Link>
-            <Link href="/about" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/about"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               About Us
             </Link>
-            <Link href="/jobs" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/jobs"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Jobs
             </Link>
           </div>
