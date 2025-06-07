@@ -56,7 +56,7 @@ function Navbar() {
             className={`${isOpen ? 'block' : 'hidden'
               } sm:flex sm:items-center sm:space-x-4 w-full sm:w-auto absolute sm:static top-16 left-0 sm:left-auto bg-white sm:bg-transparent p-4 sm:p-0 shadow-md sm:shadow-none`}
           >
-            <Link href="/" className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
+            <Link href="/" onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
               Home
             </Link>
             <Link href="/services"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
