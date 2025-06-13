@@ -10,13 +10,14 @@ export default function Banner() {
       </h1>
 
       {/* Image */}
-      <div className="w-full max-w-5xl">
+      <div className="w-full">
         <Image
-          src="/cover.png"
+          //src="/cover.png"
+          src="/quiZBanner.jpg"
           alt="Quizinema Banner"
           width={1200}
-          height={600}
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          height={400}
+          style={{ objectFit: 'contain', objectPosition: 'center' }}
           className="w-full h-auto rounded-lg shadow-md"
           priority
         />

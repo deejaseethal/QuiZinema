@@ -12,8 +12,8 @@ export default function ServicesPage() {
     <>
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center h-64 md:h-80 flex items-center justify-start"
-        style={{ backgroundImage: "url('/cover.png')" }}
+        className="relative w-full h-40 md:h-56 bg-no-repeat bg-center bg-cover flex items-center justify-start"
+        style={{ backgroundImage: "url('/quiZBanner.jpg')" }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
