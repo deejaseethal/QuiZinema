@@ -3,7 +3,7 @@ export default function OurVision() {
     <section className="w-full bg-gradient-to-b from-black to-gray-900 py-16 text-white flex items-center justify-center">
       <div className="w-full max-w-4xl px-4 text-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-normal mb-6 text-gray-200 animate-fade-in">
-          About Us <span className="italic">" The Movie Lovers Behind the Screen "</span>
+          About Us <span className="italic">&quot; The Movie Lovers Behind the Screen &quot;</span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-4">
           We&apos;re a small but passionate indie game team from India, brought together by our shared love for Bollywood and storytelling. At QuiZinema, we believe that every movie fan deserves a game that celebrates the joy of cinema — and that&apos;s exactly what we built.
