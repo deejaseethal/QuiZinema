@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
                 We do not store any personal data on our servers. All analytics data is securely handled by trusted third-party platforms.
               </p>
 
-              <h2 className="text-base font-semibold mt-6 mb-2">Children's Privacy</h2>
+              <h2 className="text-base font-semibold mt-6 mb-2">Children&apos;s Privacy</h2>
               <p className="mb-4 text-sm">
                 QuiZinema is designed for general audiences but is not intended for children under the age of 13. We do not knowingly collect personal data from children.
               </p>
