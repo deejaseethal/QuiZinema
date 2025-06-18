@@ -18,21 +18,52 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         {/* Left Side: Logo and Navigation Links */}
         <div className="flex items-center">
-          <Link href="/" className="flex items-center mr-6">
-            <div className="relative w-[100px] h-[40px]">
+          <Link href="/" className="flex items-center mr-8">
+            <div className="relative">
               <Image
-                src="/CineQuest.webp"
+                src="/logo_new.jpg"
                 alt="Quizinema Logo"
-                fill
-                className="object-contain"
+                height={100}
+                width={40}
+                className="object-cover rounded-lg shadow-lg"
               />
             </div>
 
           </Link>
 
+
+
+          {/* Navigation Links */}
+          <div
+            className={`${isOpen ? 'block' : 'hidden'
+              } sm:flex sm:items-center sm:space-x-10 w-full sm:w-auto absolute sm:static top-16 left-0 sm:left-auto bg-white sm:bg-transparent p-4 sm:p-0 shadow-md sm:shadow-none`}
+          >
+            <Link href="/" onClick={() => setIsOpen(false)} className="block sm:inline-block text-base text-[#543855] hover:text-[#D32F2F] py-2 sm:py-0">
+              Home
+            </Link>
+            <Link href="/about" onClick={() => setIsOpen(false)} className="block sm:inline-block text-base text-[#543855] hover:text-[#D32F2F] py-2 sm:py-0">
+              About Us
+            </Link>
+            <Link href="/games" onClick={() => setIsOpen(false)} className="block sm:inline-block text-base text-[#543855] hover:text-[#D32F2F] py-2 sm:py-0">
+              Games
+            </Link>
+            <Link href="/success-stories" onClick={() => setIsOpen(false)} className="block sm:inline-block text-base text-[#543855] hover:text-[#D32F2F] py-2 sm:py-0">
+              Success Stories
+            </Link>
+            <Link href="/jobs" onClick={() => setIsOpen(false)} className="block sm:inline-block text-base text-[#543855] hover:text-[#D32F2F] py-2 sm:py-0">
+              Jobs
+            </Link>
+            <Link href="/contact" onClick={() => setIsOpen(false)} className="block md:hidden sm:inline-block text-base text-[#543855] hover:text-[#D32F2F] py-2 sm:py-0">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+
+        {/* Right Side: Hamburger + Contact */}
+        <div className="flex items-center space-x-4">
           {/* Hamburger Menu for Mobile */}
           <button
-            className="sm:hidden text-gray-800 focus:outline-none mr-4"
+            className="sm:hidden text-gray-800 focus:outline-none"
             onClick={toggleMenu}
           >
             <svg
@@ -51,76 +82,15 @@ function Navbar() {
             </svg>
           </button>
 
-          {/* Navigation Links */}
-          <div
-            className={`${isOpen ? 'block' : 'hidden'
-              } sm:flex sm:items-center sm:space-x-4 w-full sm:w-auto absolute sm:static top-16 left-0 sm:left-auto bg-white sm:bg-transparent p-4 sm:p-0 shadow-md sm:shadow-none`}
-          >
-            <Link href="/" onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
-              Home
-            </Link>
-            <Link href="/services"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
-              Services
-            </Link>
-            <Link href="/pricing"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
-              Pricing
-            </Link>
-            <Link href="/news"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
-              News
-            </Link>
-            <Link href="/success-stories"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
-              Success Stories
-            </Link>
-            <Link href="/about"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
-              About Us
-            </Link>
-            <Link href="/jobs"   onClick={() => setIsOpen(false)} className="block sm:inline-block text-gray-600 hover:text-gray-800 py-2 sm:py-0">
-              Jobs
-            </Link>
-          </div>
-        </div>
-
-        {/* Right Side: Search, Phone, Sign In, Contact Us */}
-        <div className="flex items-center space-x-4">
-          {/* Search Icon */}
-          <Link href="/search" className="text-gray-600 hover:text-gray-800">
-            <svg
-              className="w-5 h-5 inline-block"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </Link>
-
-          {/* Phone Number */}
-          <Link
-            href="tel:+15555555556"
-            className="text-gray-600 hover:text-gray-800 hidden sm:block"
-          >
-            +1 555-555-5556
-          </Link>
-
-          {/* Sign In */}
-          <Link href="/signin" className="text-gray-600 hover:text-gray-800 hidden sm:block">
-            Sign In
-          </Link>
-
-          {/* Contact Us Button */}
+          {/* Contact Us Button - hidden on mobile */}
           <Link
             href="/contact"
-            className="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800"
+            className="hidden sm:inline-block bg-[#543855] text-white px-4 py-2 rounded-full hover:bg-gray-800"
           >
             Contact Us
           </Link>
         </div>
+
       </div>
     </nav>
   );

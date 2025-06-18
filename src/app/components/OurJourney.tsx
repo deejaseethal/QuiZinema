@@ -7,7 +7,7 @@ export default function OurJourneySection() {
         {/* Image Section */}
         <div className="w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/journey.jpg" // Replace with your actual image path
+            src="/journey_pic.png" // Replace with your actual image path
             alt="Castle by the sea"
             width={600}
             height={400} // Adjusted height to match aspect ratio better
@@ -21,7 +21,7 @@ export default function OurJourneySection() {
         {/* Text Overlay */}
         <div className="w-full md:w-1/2 bg-black bg-opacity-90 p-6 md:p-8 rounded-xl shadow-lg z-10 text-white">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-200 animate-fade-in">
-            🎬 Why We Built QuiZinema
+            🎬 Why We Built QuiZinema?
           </h2>
           <div className="space-y-4">
             <p className="text-base sm:text-lg leading-relaxed">

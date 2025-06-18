@@ -4,8 +4,8 @@ import GameVision from './components/GameVision';
 import TopGamesReleases from './components/TopGameReleases';
 import OurJourney from './components/OurJourney';
 import SkilledTeam from './components/SkilledTeam';
-import TrustedGame from './components/TrustedGame';
-import GameDemo from './components/GameDemo';
+
+
 
 
 export default function Home() {
@@ -17,8 +17,8 @@ export default function Home() {
       <TopGamesReleases />
       <OurJourney/>
       <SkilledTeam/>
-      <TrustedGame/>
-      <GameDemo/>
+      
+     
      
 
     </main>
