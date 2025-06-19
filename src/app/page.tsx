@@ -4,6 +4,7 @@ import GameVision from './components/GameVision';
 import TopGamesReleases from './components/TopGameReleases';
 import OurJourney from './components/OurJourney';
 import SkilledTeam from './components/SkilledTeam';
+import ReviewSection from './components/Review';
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <TopGamesReleases />
       <OurJourney/>
       <SkilledTeam/>
+      <ReviewSection/>
       
      
      
