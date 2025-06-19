@@ -5,22 +5,22 @@ export default function Banner() {
   return (
     <section className="w-full bg-gradient-to-b from-gray-50 to-white  flex flex-col items-center">
       {/* Image */}
-      <div className="w-full overflow-hidden max-h-[605px]"> {/* Constrain max height */}
+      <div className="w-full overflow-hidden"> {/* Constrain max height */}
         <Image
-          src="/cover.png"
+          src="/bannernew.jpg"
           alt="Quizinema Banner"
-          width={1200}
-          height={590} // Updated to a reasonable height for 3:1 ratio
+          width={1800}
+          height={815} // Updated to a reasonable height for 3:1 ratio
           layout="responsive"
           style={{ objectFit: 'contain', objectPosition: 'center' }}
           priority
         />
       </div>
       {/* Title */}
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center px-4 mt-8 mb-4 text-gray-900 animate-fade-in">
+      <h1   className="text-3xl sm:text-4xl md:text-5xl font-bold text-center px-4 mt-8 mb-4 text-gray-900 animate-fade-in">
         Welcome to QuiZinema
       </h1>
-      <p className="text-xl sm:text-2xl text-gray-600 italic mb-6 animate-fade-in-delay">
+      <p className="text-xl sm:text-2xl text-[#543855]  italic mb-6 text-center animate-fade-in-delay">
         The Ultimate Movie Quiz Experience!
       </p>
 
