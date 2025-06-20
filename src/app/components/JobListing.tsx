@@ -36,7 +36,7 @@ interface JobListing {
     return (
       <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-12 bg-gray-100">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#543855] mb-6">
             Join Our Team
           </h2>
           <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-12 max-w-2xl mx-auto">
@@ -53,7 +53,7 @@ interface JobListing {
                 <p className="text-gray-500 text-sm mb-4">Location: {job.location}</p>
                 <a
                   href={job.applyLink}
-                  className="inline-block bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors"
+                  className="inline-block bg-[#543855] text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors"
                 >
                   Apply Now
                 </a>
