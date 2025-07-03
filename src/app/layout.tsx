@@ -3,7 +3,7 @@
 import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import FooterSection from './components/footer'
+import FooterSection from '@/components/footer'
 import { useState } from 'react';
 
 function Navbar() {

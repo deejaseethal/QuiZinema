@@ -1,6 +1,6 @@
 
 import { Metadata } from 'next';
-import TeamSection from '../components/TeamSection';
+import TeamSection from '@/components/TeamSection';
 
 export const metadata: Metadata = {
   title: 'About Us | Quizinema',

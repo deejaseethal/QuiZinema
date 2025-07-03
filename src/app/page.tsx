@@ -1,10 +1,10 @@
 
-import Banner from './components/Banner';
-import GameVision from './components/GameVision';
-import TopGamesReleases from './components/TopGameReleases';
-import OurJourney from './components/OurJourney';
-import SkilledTeam from './components/SkilledTeam';
-import ReviewSection from './components/Review';
+import Banner from '@/components/Banner';
+import GameVision from '@/components/GameVision';
+import TopGamesReleases from '@/components/TopGameReleases';
+import OurJourney from '@/components/OurJourney';
+import SkilledTeam from '@/components/SkilledTeam';
+import ReviewSection from '@/components/Review';
 
 
 

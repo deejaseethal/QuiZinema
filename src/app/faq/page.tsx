@@ -1,4 +1,4 @@
-import FAQPage from '../components/FreqAskQuestions';
+import FAQPage from '@/components/FreqAskQuestions';
 
 const FAQ_Page: React.FC = () => {
   return <FAQPage />;

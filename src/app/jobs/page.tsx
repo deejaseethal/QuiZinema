@@ -1,6 +1,6 @@
 
 import { Metadata } from 'next';
-import JobListing from '../components/JobListing';
+import JobListing from '@/components/JobListing';
 
 
 export const metadata: Metadata = {
